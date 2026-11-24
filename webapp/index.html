@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Person form (MVC)</title></head>
+<body>
+    <h2>Enter a person's information</h2>
+    <form action="Controller" method="post">
+        <label>First name:</label>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Last name:</label>
+        <input type="text" name="lastName" required><br><br>
+
+        <label>Birth day (mm/dd/yyyy):</label>
+        <input type="text" name="birthDay" placeholder="mm/dd/yyyy"
+               pattern="(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/[0-9]{4}"
+               title="Format: mm/dd/yyyy" required><br><br>
+
+        Sex:
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+    <p><a href="menu.html">All pages of the lab</a></p>
+</body>
+</html>
